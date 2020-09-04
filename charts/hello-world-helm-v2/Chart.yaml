@@ -1,5 +1,5 @@
-apiVersion: v2
-name: hello-world
+apiVersion: v1
+name: hello-world-helm-v2
 description: A Helm chart for Kubernetes
 home: https://github.com/Knappek/github-actions-getting-started
 
