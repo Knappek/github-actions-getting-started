@@ -8,9 +8,6 @@ on:
 jobs:
   release:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: deployment/helm
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -24,5 +21,7 @@ jobs:
 
       - name: Run chart-releaser
         uses: helm/chart-releaser-action@v1.0.0
+        with:
+          charts_dir: deployment/helm/hello-world
         env:
           CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
