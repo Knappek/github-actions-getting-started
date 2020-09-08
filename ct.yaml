@@ -1,4 +1,4 @@
 remote: origin
 chart-dirs:
-  - deployment
+  - deployment/helm
 debug: true
