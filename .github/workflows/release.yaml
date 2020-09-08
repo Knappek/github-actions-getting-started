@@ -6,7 +6,7 @@ on:
       - master
 defaults:
   run:
-    working-directory: ./deployment/helm
+    working-directory: ./deployment
 
 jobs:
   release:
@@ -26,3 +26,5 @@ jobs:
         uses: helm/chart-releaser-action@v1.0.0
         env:
           CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+        with:
+          charts_dir: helm
