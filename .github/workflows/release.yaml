@@ -4,13 +4,13 @@ on:
   push:
     branches:
       - master
-defaults:
-  run:
-    working-directory: ./deployment
 
 jobs:
   release:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: deployment/helm
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -26,5 +26,3 @@ jobs:
         uses: helm/chart-releaser-action@v1.0.0
         env:
           CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
-        with:
-          charts_dir: helm
