@@ -1,4 +1,3 @@
 remote: origin
 chart-dirs:
   - deployment/helm
-debug: true
