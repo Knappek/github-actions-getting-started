@@ -14,3 +14,4 @@ helm search repo knappek
 # install the chart
 helm install knappek/hello-world
 ```
+
