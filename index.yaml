@@ -3,19 +3,6 @@ entries:
   hello-world:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-09-08T09:56:58.642888769Z"
-    description: A Helm chart for Kubernetes
-    digest: 7cbfdc883bf29e28cb8bd13fbc81c60ce07c5ede46cbc37d0dbf109756e04c14
-    home: https://github.com/Knappek/github-actions-getting-started
-    maintainers:
-    - email: andy.knapp.ak@gmail.com
-      name: Knappek
-    name: hello-world
-    urls:
-    - https://github.com/Knappek/github-actions-getting-started/releases/download/hello-world-0.1.4/hello-world-0.1.4.tgz
-    version: 0.1.4
-  - apiVersion: v2
-    appVersion: 1.16.0
     created: "2020-09-04T12:50:45.243593678Z"
     description: A Helm chart for Kubernetes
     digest: 2d61a6a17d0b3ff163681da051a46f67f379fae6f2637ace1b1244d687fb37bb
